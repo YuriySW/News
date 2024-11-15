@@ -2,8 +2,9 @@ import {renderNewsCards} from './render.js';
 
 const API_KEY = '4b2b0d0e0da043b880203823db1ec41b';
 
-// const url = `https://newsapi.org/v2/top-headlines?country=ru&language=ru&apiKey=${API_KEY}`;
-const url = `https://newsapi.org/v2/top-headlines?country=us&language=en&apiKey=${API_KEY}`;
+const url = `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=us&language=ru&apiKey=${API_KEY}`;
+
+// const url = `https://newsapi.org/v2/top-headlines?country=us&language=en&apiKey=${API_KEY}`;
 
 // const url = `https://newsapi.org/v2/everything?q=новости&language=ru&apiKey=${API_KEY}`;
 
