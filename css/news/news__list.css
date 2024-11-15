@@ -1,0 +1,15 @@
+.news__list {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: minmax(0, 270px) minmax(0, 270px) minmax(0, 270px) minmax(0, 270px);
+  row-gap: 40px;
+  justify-content: space-between;
+}
+
+.news__item {
+}
+
+/* .news__link {
+  cursor: pointer;
+} */

@@ -1,0 +1,11 @@
+.title {
+  color: var(--3, #212121);
+  font-family: Roboto;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 33.8px */
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

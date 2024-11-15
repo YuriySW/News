@@ -1,0 +1,9 @@
+.news__text {
+  color: var(--3, #212121);
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%; /* 15.6px */
+  margin-bottom: 11px;
+}

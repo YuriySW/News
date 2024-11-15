@@ -1,0 +1,6 @@
+.search-button {
+  position: absolute;
+  cursor: pointer;
+  right: 20px;
+  top: 10px;
+}

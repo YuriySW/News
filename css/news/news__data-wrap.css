@@ -1,0 +1,13 @@
+.news__data-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news__time {
+  color: var(--4, #8e8e8e);
+  font-family: 'Roboto';
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%; /* 13px */
+}
