@@ -1,4 +1,4 @@
-import {renderNewsCards} from './render.js';
+import {renderNewsCards, eventHandler} from './render.js';
 
 const API_KEY = '4b2b0d0e0da043b880203823db1ec41b';
 const BASE_URL = 'https://newsapi.org/v2/everything';
@@ -25,10 +25,32 @@ export async function fetchNews() {
     console.log(articles);
 
     // Вызываем функцию для отображения карточек
-    renderNewsCards(articles);
+    renderNewsCards(articles, '.news__list_fresh');
   } catch (error) {
     console.error('Ошибка при получении новостей:', error);
   }
 }
 
+export async function fetchNewsSearch(query) {
+  const url = `${BASE_URL}?q=${encodeURIComponent(query)}&apiKey=${API_KEY}`;
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`Ошибка поиска: ${response.status}`);
+  }
+  const data = await response.json();
+  return data.articles || [];
+}
+
+// Функция для запроса популярных новостей
+export async function fetchPopularNews() {
+  const url = `${TOP_HEADLINES_URL}?country=us&apiKey=${API_KEY}`;
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`Ошибка популярных новостей: ${response.status}`);
+  }
+  const data = await response.json();
+  return data.articles || [];
+}
+
 fetchNews();
+eventHandler();
