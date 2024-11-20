@@ -98,11 +98,12 @@ export function renderNewsCards(articles, containerSelector) {
   // Генерируем HTML для карточек
   const cardsHTML = articles
     .map((article) => {
-      const {urlToImage, title, url, description, publishedAt, author} = article;
+      // const {urlToImage, title, url, description, publishedAt, author} = article;
+      const {image, title, url, description, publishedAt, source} = article;
 
       const formattedDate = new Date(publishedAt).toLocaleString();
-      const imageUrl = urlToImage || 'https://via.placeholder.com/150';
-      const authorText = author || 'Неизвестный автор';
+      const imageUrl = image || '../../img/no-image.jpg';
+      const authorText = source || 'Неизвестный автор';
       const descriptionText = description || 'Описание недоступно.';
 
       return `
