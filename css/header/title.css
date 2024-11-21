@@ -9,3 +9,21 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+@media (max-width: 1215px) {
+  .title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 882px) {
+  .title {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 642px) {
+  .title {
+    font-size: 17px;
+  }
+}

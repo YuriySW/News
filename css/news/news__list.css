@@ -13,3 +13,17 @@
 /* .news__link {
   cursor: pointer;
 } */
+@media (max-width: 1215px) {
+  .news__list {
+    grid-template-columns: minmax(0, 270px) minmax(0, 270px);
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 742px) {
+  .news__list {
+    grid-template-columns: minmax(0, 270px);
+  }
+}

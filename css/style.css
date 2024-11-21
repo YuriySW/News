@@ -44,6 +44,12 @@ html {
   margin: 0 auto;
 }
 
+@media (max-width: 526px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
 .section {
   padding-top: 50px;
 }

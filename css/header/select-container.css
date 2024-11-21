@@ -1,7 +1,8 @@
 .select-container {
   display: inline-block;
   position: relative;
-  width: 100%;
+  /* width: 100%; */
+  width: 320px;
   justify-self: end;
 }
 
@@ -34,4 +35,10 @@
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
+}
+
+@media (max-width: 782px) {
+  .select-container::after {
+    top: 50%;
+  }
 }
