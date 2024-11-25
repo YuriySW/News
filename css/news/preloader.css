@@ -1,0 +1,33 @@
+#preloader,
+#preloader-fresh {
+  /* position: relative; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 20px auto; /* Центрирование под элементом */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.unseen {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Анимация вращения */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  animation: rotate 3s linear infinite;
+}

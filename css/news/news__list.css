@@ -5,6 +5,13 @@
   grid-template-columns: minmax(0, 270px) minmax(0, 270px) minmax(0, 270px) minmax(0, 270px);
   row-gap: 40px;
   justify-content: space-between;
+  min-height: 850px;
+}
+
+.news__list_search {
+}
+
+.news__list_fresh {
 }
 
 .news__item {
