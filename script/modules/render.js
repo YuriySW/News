@@ -16,7 +16,7 @@ export function renderNewsCards(articles, containerSelector) {
 
       const formattedDate = new Date(publishedAt).toLocaleString();
       // const imageUrl = image || '../../img/no-image.jpg';
-      const defaultImage = '../../img/no-image.jpg';
+      const defaultImage = '/img/no-image.jpg';
       const imageUrl = image || defaultImage;
 
       const authorText = source.name || 'Неизвестный автор';
