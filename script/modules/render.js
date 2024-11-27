@@ -16,9 +16,12 @@ export function renderNewsCards(articles, containerSelector) {
 
       const formattedDate = new Date(publishedAt).toLocaleString();
       // const imageUrl = image || '../../img/no-image.jpg';
+      const secureImage = image?.startsWith('http://')
+        ? image.replace('http://', 'https://')
+        : image;
       const defaultImage =
         'https://raw.githubusercontent.com/YuriySW/News/refs/heads/main/img/no-image.jpg';
-      const imageUrl = image || defaultImage;
+      const imageUrl = secureImage || defaultImage;
 
       const authorText = source.name || 'Неизвестный автор';
       const descriptionText = description || 'Описание недоступно.';
