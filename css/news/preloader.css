@@ -1,12 +1,11 @@
 #preloader,
 #preloader-fresh {
-  /* position: relative; */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  margin: 20px auto; /* Центрирование под элементом */
+  margin: 20px auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +17,6 @@
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-/* Анимация вращения */
 @keyframes rotate {
   0% {
     transform: rotate(0deg);

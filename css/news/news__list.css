@@ -8,18 +8,6 @@
   min-height: 850px;
 }
 
-.news__list_search {
-}
-
-.news__list_fresh {
-}
-
-.news__item {
-}
-
-/* .news__link {
-  cursor: pointer;
-} */
 @media (max-width: 1215px) {
   .news__list {
     grid-template-columns: minmax(0, 270px) minmax(0, 270px);

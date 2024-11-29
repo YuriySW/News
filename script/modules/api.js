@@ -1,4 +1,5 @@
-import {renderNewsCards, eventHandler} from './render.js';
+import {renderNewsCards} from './render.js';
+import {eventHandler} from './event-handler.js';
 import {
   newsList,
   preloader,
